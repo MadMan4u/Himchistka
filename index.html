@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Car</title>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cocoen.min.css">
+    <link rel="stylesheet" href="./jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0d913f72-2fe0-4d37-af52-a6839c881a7c&lang=ru_RU"
+        type="text/javascript"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <div class="header__menu">
+            <a class="header__menu-link" href="tel:+79188610151">+7 (918) 861 01 51</a>
+            <div class="header__menu-anchor">
+                <ul class="header__menu-list">
+                    <li class="header__list-item"><a href="#price">Цена</a></li>
+                    <li class="header__list-item"><a
+                            href="https://www.avito.ru/user/b3b2068f13688d3c851bab29fc4380a4/profile?id=1903139816&src=item#open-reviews-list"
+                            target="_blank">Отзывы</a></li>
+                    <li class="header__list-item"><a href="#our_contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <a href="" class="burger-menu_button">
+                <span class="burger-menu_lines"></span>
+            </a>
+            <nav class="burger-menu_nav">
+                <a href="#price" class="burger-menu_link">Цена</a>
+                <a href="https://www.avito.ru/user/b3b2068f13688d3c851bab29fc4380a4/profile?id=1903139816&src=item#open-reviews-list"
+                    target="_blank" class="burger-menu_link">Отзывы</a>
+                <a href="#our_contacts" class="burger-menu_link">Контакты</a>
+                <a href="tel:+79188610151" class="burger-menu_link"><span>+7 (918) 861 01 51</span></a>
+            </nav>
+            <div class="burger-menu_overlay"></div>
+        </div>
+    </header>
+    <div class="header-mobile"></div>
+    <div class="cover header__bg">
+        <p class="header__bg-text">Химчистка</p>
+        <p class="header__bg-text">Заправка кондиционера</p>
+        <p class="header__bg-text">Озонирование</p>
+    </div>
+
+    <main class="main">
+        <div class="main__indent">
+            <h1 class="main__indent-title">Химчистка салона автомобиля</h1>
+        </div>
+        <div class="main__content">
+            <div class="text">
+                <p>Чтобы салон всегда выглядел безупречно, мы рекомендуем регулярно,
+                    не реже, чем раз в год, производить химчистку салона автомобиля.
+                    Ведь загрязнённая обивка — это источник пыли и скопление микробов.
+                </p>
+                <p>Элементы внутренней отделки автомобиля спустя какое-то время
+                    теряют свой лоск и привлекательность. Салон выцветает под
+                    действием солнечных лучей, пролитая жидкость, пыль, грязь,
+                    сигаретный дым и пепел - всё это со временем сказывается на
+                    состоянии материала обивки салона автомобиля. Для того чтобы
+                    вернуть обивке авто первозданный вид, необходимо провести
+                    качественную профессиональную химчистку салона. Благодаря
+                    современным технологиям и гипоаллергенными чистящим средствам
+                    даже самые застарелые загрязнения исчезают без следа, и внутри
+                    машины снова становится чисто и уютно.
+                </p>
+                <p>Качественная химчистка салона автомобиля подразумевает обработку
+                    всех элементов, в том числе каждого стыка между панелями и мелкими
+                    деталями салона. Химчистка у нас полностью вернет салону вашего
+                    автомобиля первоначальный лоск и эстетичность.
+                </p>
+                <p>
+                    Наши специалисты выполняют химчистку салона авто, используя
+                    только эффективное современное оборудование и качественные
+                    моющие средства, которые не вызывают аллергии и не нанесут
+                    вреда поверхностям в салоне автомобиля.
+                </p>
+            </div>
+            <div class="main__content-price" id="price">
+                <h2 class="main__price-title">
+                    Цена на химчистку автомобиля
+                </h2>
+                <div class="text">
+                    <p class="main__price-descr">
+                        Цена на химчистку салона автомобиля зависит от специфики и
+                        объема загрязнений, от типа и размера автомобиля, а также от
+                        материала салона автомобиля и степени его износа. Наши специалисты
+                        по химчистке авто подберут для вас наиболее подходящие и бережные
+                        средства очистки в зависимости от всех вышеперечисленных критериев.
+                        Цену на химчистку именно вашего автомобиля вы можете узнать,
+                        воспользовавшись калькулятором или по телефону: <a href="tel:+79188610151" class="stroke">+7
+                            (918)
+                            861 01 51</a>
+                    </p>
+                    <p class="main__price-more">
+                        Чтобы узнать цену на химчистку, выберите тип кузова автомобиля.
+                    </p>
+                </div>
+            </div>
+            <div class="main__calc">
+                <div class="main__content-calc">
+
+                    <p class="main__calc-text">
+                        Выберите тип химчистки:
+                    </p>
+                    <div class="main__calc-choice" id="full">
+                        <p class="main__choice-text">Полная</p>
+                        <div class="main__choice-arrow">
+                            <img src="./img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="main__calc-choice" id="seats">
+                        <p class="main__choice-text">Сидения</p>
+                    </div>
+                </div>
+
+                <section class="calc__choice">
+                    <div class="calc__choice-item item--active" data-section="1">
+                        <span>Седан</span>
+                        <img src="./img/sedan.svg" alt="Sedan">
+                    </div>
+                    <div class="calc__choice-item" data-section="2">
+                        <span>Универсал</span>
+                        <img src="./img/universal.svg" alt="Universal">
+                    </div>
+                    <div class="calc__choice-item" data-section="3">
+                        <span>Купе</span>
+                        <img src="./img/cupe.svg" alt="Cupe">
+                    </div>
+                    <div class="calc__choice-item" data-section="4">
+                        <span>Хэтчбэк</span>
+                        <img src="./img/hachback.svg" alt="Hachback">
+                    </div>
+                    <div class="calc__choice-item" data-section="5">
+                        <span>Кроссовер</span>
+                        <img src="./img/cross.svg" alt="Crossover">
+                    </div>
+                    <div class="calc__choice-item" data-section="6">
+                        <span>Внедорожник</span>
+                        <img src="./img/vnedorognik.svg" alt="Vnedorognik">
+                    </div>
+                </section>
+
+                <section class="calc__price" id="full_price">
+                    <div class="calc__price-item">
+                        <div class="calc__price-group">
+                            <h3 class="calc__price-title">
+                                от 4 000 ₽
+                            </h3>
+                            <a href="tel:+79188610151">
+                                <div class="calc__price-btn desktop-btn">
+                                    Позвонить
+                                </div>
+                            </a>
+                        </div>
+                        <div class="calc__price-subtitle">
+                            Время: ~10 часов
+                        </div>
+                        <div class="calc__price-btn mobile-btn">
+                            Позвонить
+                        </div>
+                    </div>
+                </section>
+
+                <section class="calc__price" id="seats_price">
+                    <div class="calc__price-item">
+                        <div class="calc__price-group">
+                            <h3 class="calc__price-title">
+                                Сидения
+                            </h3>
+                            <a href="tel:+79188610151">
+                                <div class="calc__price-btn desktop-btn">
+                                    Позвонить
+                                </div>
+                            </a>
+                        </div>
+                        <div class="calc__price-subtitle">
+                            Время: ~10 часов
+                        </div>
+                        <div class="calc__price-btn mobile-btn">
+                            Позвонить
+                        </div>
+                    </div>
+                </section>
+
+                <section class="calc__included">
+                    <h3 class="calc__included-title">
+                        Что входит в стоимость полной химчистки?
+                    </h3>
+                    <ul class="calc__included-list">
+                        <li class="calc__included-item">Пол</li>
+                        <li class="calc__included-item">Потолок</li>
+                        <li class="calc__included-item">Сидения</li>
+                        <li class="calc__included-item">Двери</li>
+                        <li class="calc__included-item">Багажник</li>
+                        <li class="calc__included-item">Весь пластик салона</li>
+                        <li class="calc__included-item">Чистка воздуховодов</li>
+                        <li class="calc__included-item">Сушка салона</li>
+                    </ul>
+                </section>
+
+                <section class="main__gallery">
+                    <h3 class="main__gallery-title">
+                        Примеры работ
+                    </h3>
+                    <div class="main__gallery-content">
+                        <a href="./img/work1(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work1.jpg" alt="work1">
+                        </a>
+                        <a href="./img/work2(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work2.jpg" alt="work2">
+                        </a>
+                        <a href="./img/work3(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work3.jpg" alt="work3">
+                        </a>
+                        <a href="./img/work4(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work4.jpg" alt="work4">
+                        </a>
+                        <a href="./img/work5(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work5.jpg" alt="work5">
+                        </a>
+                        <a href="./img/work6(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work6.jpg" alt="work6">
+                        </a>
+
+                        <a href="./img/work1(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work1.jpg" alt="work1">
+                        </a>
+                        <a href="./img/work2(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work2.jpg" alt="work2">
+                        </a>
+                        <a href="./img/work3(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work3.jpg" alt="work3">
+                        </a>
+                        <a href="./img/work4(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work4.jpg" alt="work4">
+                        </a>
+                        <a href="./img/work5(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work5.jpg" alt="work5">
+                        </a>
+                        <a href="./img/work6(full).jpg" data-fancybox="gallery">
+                            <img src="./img/work6.jpg" alt="work6">
+                        </a>
+                    </div>
+                    <div class="main__gallery-btn">
+                        Показать еще
+                    </div>
+                    <div class="main__gallery-mobile">
+                        <ul class="rslides">
+                            <li>
+                                <img src="./img/work1.jpg" alt="work6">
+                            </li>
+                            <li>
+                                <img src="./img/work2.jpg" alt="work6">
+                            </li>
+                            <li>
+                                <img src="./img/work3.jpg" alt="work6">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <section class="main__questions">
+                        <h3 class="main__questions-title">
+                            ВОПРОС-ОТВЕТ по химчистке автомобиля
+                        </h3>
+                        <ul class="main__questions-list">
+                            <li class="main__questions-item">
+                                <div class="questions__item-title">
+                                    Почему нужно проводить химчистку именно у нас?
+                                </div>
+                                <div class="questions__item-text">
+                                    Качество. Мы предлагаем только премиальные моющие
+                                    средства, высокоэффективное оборудование и не вредим
+                                    салону автомобиля
+                                </div>
+                                <button class="questions__item-btn">
+                                    <img src="./img/dropdown.svg" alt="dropdown">
+                                </button>
+                            </li>
+
+                            <li class="main__questions-item">
+                                <div class="questions__item-title">
+                                    Что такое озонация салона и почему многие ее делают?
+                                </div>
+                                <div class="questions__item-text">
+                                    Озонация салона – процедура, при которой погибает 99%
+                                    вредоносных болезнетворных бактерий, удаляются любые
+                                    запахи, и воздух в салоне становится более свежим.
+                                    Также данную услугу многие называют “Сухой туман”
+                                </div>
+                                <button class="questions__item-btn">
+                                    <img src="./img/dropdown.svg" alt="dropdown">
+                                </button>
+                            </li>
+
+                            <li class="main__questions-item">
+                                <div class="questions__item-title">
+                                    Сколько времени занимает химчистка салона автомобиля?
+                                </div>
+                                <div class="questions__item-text">
+                                    По разному. Зависит от типа химчистки, типа кузова.
+                                    С предварительной ценой вы можете ознакомиться у нас на сайте, с
+                                    помощью калькулятора
+                                </div>
+                                <button class="questions__item-btn">
+                                    <img src="./img/dropdown.svg" alt="dropdown">
+                                </button>
+                            </li>
+
+                            <li class="main__questions-item">
+                                <div class="questions__item-title">
+                                    Зачем делается защитная обработка салона?
+                                </div>
+                                <div class="questions__item-text">
+                                    Для продления срока службы элементов салона, для их защиты
+                                    от выгорания вследствие воздействия ультрафиолета, и, конечно,
+                                    для защиты от загрязнений (достаточно будет протереть испачканный
+                                    элемент салона влажной тряпкой)
+                                </div>
+                                <button class="questions__item-btn">
+                                    <img src="./img/dropdown.svg" alt="dropdown">
+                                </button>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="main__comparison">
+                        <h3 class="main__comparison-title">
+                            До и после химчистки салона автомобиля
+                        </h3>
+                        <div class="text">
+                            <p class="main__comparison-subtitle">
+                                В ритме нашей жизни и частым использованием автомобиля мы не замечаем часто как салон
+                                загрязняется Это всё свидетельствует о том, что пора сделать химчистку.
+                            </p>
+                            <p class="main__comparison-subtitle">
+                                После ХИМЧИСТКИ кожаного салона МЫ ОБЯЗАТЕЛЬНО обрабатываем кожу кремом- кондиционером
+                                для
+                                восстановления упругости и первоначального вида, увлажнения кожи и предохранения от
+                                пересыхания,
+                                от ультрафиолетового излучения.
+                            </p>
+                        </div>
+                        <ul class="main__comparison-list">
+                            <li class="comparison__list-item --active-tab" id="tab1">Кресла</li>
+                            <li class="comparison__list-item" id="tab2">Коврик</li>
+                            <li class="comparison__list-item" id="tab3">Багажник</li>
+                            <li class="comparison__list-item" id="tab4">Потолок</li>
+                        </ul>
+                        <div class="main__comparison-tab" id="tab-content1">
+                            <div class="cocoen">
+                                <img src="./img/vs1.png" alt="After">
+                                <img src="./img/vs2.png" alt="Before">
+                            </div>
+                        </div>
+                        <div class="main__comparison-tab" id="tab-content2">
+                            <div class="cocoen">
+                                <img src="./img/vs_kovrik(1).jpg" alt="After">
+                                <img src="./img/vs-kovrik(2).jpg" alt="Before">
+                            </div>
+                        </div>
+                        <div class="main__comparison-tab" id="tab-content3">
+                            <div class="cocoen">
+                                <img src="./img/vs1.png" alt="After">
+                                <img src="./img/vs2.png" alt="Before">
+                            </div>
+                        </div>
+                        <div class="main__comparison-tab" id="tab-content4">
+                            <div class="cocoen">
+                                <img src="./img/vs_potolok(1).jpg" alt="After">
+                                <img src="./img/vs_potolok(2).jpg" alt="Before">
+                            </div>
+                        </div>
+                    </section>
+                    
+                <section class="main__stages">
+                    <h3 class="main__stages-title">
+                        Этапы химчистки салона автомобиля
+                    </h3>
+                    <div class="main__stages-container">
+                        <div class="main__stages-item">
+                            <img src="./img/stage1.jpg" alt="Stage one">
+                            <p>
+                                Технологическая подготовка авто: кузов тщательно моют,
+                                очищают глиной, удаляют различные битумные и иные загрязнения,
+                                следы смолы и т.д. Качественное профессиональное очищение
+                                поверхности кузова автомобиля позволит провести химчистку
+                                салона авто, не занося внутрь автомобиля дополнительных
+                                загрязнений.
+                            </p>
+                        </div>
+                        <div class="main__stages-item">
+                            <img src="./img/stage2.jpg" alt="Stage two">
+                            <p>
+                                Подбор специалистом необходимых химических составов и
+                                четкого времени обработки и пропитки в зависимости от
+                                типа материала. Покрытие салона авто химическими средствами.
+                                Полное удаление загрязнений моющим пылесосом. Очистка динамиков
+                                аудиосистемы под небольшим давлением, продувка вентиляционных
+                                отверстий систем обогрева под высоким давлением.
+                            </p>
+                        </div>
+                        <div class="main__stages-item">
+                            <img src="./img/stage3.jpg" alt="Stage three">
+                            <p>
+                                После химчистки автомобиля производится сушка салона
+                                с помощью специальных автомобильных фенов. На автомобильные
+                                сидения надеваются специальные чехлы с подогревом и
+                                вентиляцией для сушки. В нашем детейлинг центре мы
+                                выполним процедуру сушки салона автомобиля с учетом
+                                всех технологических норм.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div> 
+            </div>
+    </main>
+    <div class="cover footer__bg"></div>
+
+    <main class="main">
+        <div class="main__indent"></div>
+        <div class="main__content">
+            <div class="main__about">
+                <h3 class="main__about-title">
+                    Почему стоит произвести химчистку салона у нас?
+                </h3>
+                <div class="main__about-container">
+                    <div class="main__about-item">
+                        <img src="./img/petal.svg" alt="petal">
+                        <p>
+                            Мы используем только премиальные моющие средства,
+                            которые не вызывают аллергии у людей и
+                            полностью безопасны для животных
+                        </p>
+                    </div>
+                    <div class="main__about-item">
+                        <img src="./img/drill.svg" alt="drill">
+                        <p>
+                            Мы используем высокоэффективное оборудование,
+                            которое не повредит салон автомобиля при химчистке
+                        </p>
+                    </div>
+                    <div class="main__about-item">
+                        <img src="./img/clock.svg" alt="clock">
+                        <p>
+                            Четко подберем время пропитки материала салона
+                            химическими средствами и удалим до 99% загрязнений
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <footer class="footer">
+        <div class="footer-title" id="our_contacts">
+            <span>Наши</span> <span>контакты</span>
+        </div>
+        <div class="footer__info">
+            <h4 class="footer__info-address">
+                Ставрополь, ул. Некрасова 139
+            </h4>
+            <h4 class="footer__info-number">
+                +7 (918) 861 01 51
+            </h4>
+            <h4 class="footer__info-insta">
+                Наш <a href="#">Instagram</a>
+            </h4>
+        </div>
+        <div class="map" id="map"></div>
+        <img src="./img/footer-logo.png" alt="footer logo" class="footer__logo">
+    </footer>
+
+    <script src="./cocoen-jquery.min.js"></script>
+    <script src="./cocoen.min.js"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./jquery.fancybox.min.js"></script>
+    <script src="./responsiveslides.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
